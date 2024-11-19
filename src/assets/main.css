@@ -1,0 +1,19 @@
+@import './base.css';
+
+.continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routerLink {
+  color: theme('colors.slate.800') !important;
+  font-weight: 500;
+  margin-left: theme(margin.2);
+  margin-right: theme(margin.2);
+}
+
+.routerLinkActive {
+  color: theme('colors.blue.500') !important;
+  font-weight: 500;
+}

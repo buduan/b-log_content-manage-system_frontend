@@ -1,0 +1,40 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Sans+SC:wght@100..900&display=swap');
+
+/* import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basics */
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Host Grotesk', 'Noto Sans SC', Helvetica, sans-serif;
+  color: #1e293b;
+}
+/* Stand Style */
+h1,
+h2 {
+  font-weight: 900;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: theme('colors.blue.500');
+}
+
+a:hover {
+  color: theme('colors.blue.400');
+}
