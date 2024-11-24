@@ -50,7 +50,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.name + '-' + siteInfo.defaultTitle || siteInfo.defaultTitle
+  document.title = to.meta.name + ' | ' + siteInfo.defaultTitle || siteInfo.defaultTitle
   next()
 })
 

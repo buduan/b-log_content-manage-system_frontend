@@ -11,6 +11,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@editorjs/editorjs": "^2.30.7",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },

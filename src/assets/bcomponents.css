@@ -1,0 +1,18 @@
+.b-button {
+  transition: all 0.3s;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  color: theme(colors.slate.800);
+  font-weight: 500;
+}
+
+.b-button:hover {
+  transition: all 0.3s;
+  background-color: theme(colors.slate.100);
+  color: theme(colors.slate.600);
+}
+
+
+
