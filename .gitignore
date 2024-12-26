@@ -1,3 +1,10 @@
+#OS junk files
+.DS_Store
+windows.ini
+Thumbs.db
+.vscode
+.idea
+
 # Logs
 logs
 *.log
