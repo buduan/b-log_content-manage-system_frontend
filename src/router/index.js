@@ -46,11 +46,22 @@ const router = createRouter({
         name: '设计',
       },
     },
+    {
+      path: '/contact',
+      name: 'contact',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ContactView.vue'),
+      meta: {
+        name: 'Halo',
+      },
+    },
   ],
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.name + ' | ' + siteInfo.defaultTitle || siteInfo.defaultTitle
+  document.title = to.meta.name + ' - ' + siteInfo.defaultTitle || siteInfo.defaultTitle
   next()
 })
 

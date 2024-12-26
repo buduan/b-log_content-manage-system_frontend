@@ -4,7 +4,9 @@
     <div>
       <h3 class="text-2xl my-2">{{ Title }}</h3>
       <div class="flex flex-col space-y-2">
-        <a :href="linkHref" class="text-slate-300 hover:text-slate-50">{{ linkTitle }}</a>
+        <a v-for="link in links" :key="link.linkHref" :href="link.linkHref" class="text-slate-300 hover:text-slate-50">
+          {{ link.linkTitle }}
+        </a>
       </div>
     </div>
   </div>
@@ -22,17 +24,15 @@ export default {
     return {
       links: [
         {
-          Title: '本站导航',
           linkHref: '/home',
           linkTitle: 'Home',
+          isRouter: true,
         },
         {
-          Title: '更多站点',
           linkHref: '/about',
           linkTitle: 'About',
         },
         {
-          Title: '友情链接',
           linkHref: '/articles',
           linkTitle: 'Articles',
         },
