@@ -1,6 +1,6 @@
 name: Build and Release Vue App
 permissions:
-      contents: write
+  contents: write
 
 on:
   push:
