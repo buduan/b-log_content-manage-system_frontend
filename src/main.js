@@ -16,6 +16,7 @@ export const siteInfo = {
   siteDomain: 'https://www.ibuduan.com', //站点域名
 }
 
+
 const app = createApp(App)
 const pinia = createPinia()
 
