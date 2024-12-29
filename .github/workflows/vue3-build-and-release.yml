@@ -35,15 +35,17 @@ jobs:
         run: |
           mkdir dist_package
           cp -r dist/* dist_package/
-          tar -czvf dist_package.tar.gz dist_package/
+          tar -czvf dist.tar.gz dist_package/
+          zip -r dist.zip dist_package/
 
       # 6. 创建Release并上传构建结果
       - name: Create Release and Upload Artifacts
         uses: softprops/action-gh-release@v1
         with:
-          files: dist_package.tar.gz
+          files: dist.tar.gz,
+                 dist.zip
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          body: "Automated release for tag ${{ github.ref_name }}"
+          body: "Automated release for tag ${{ github.ref_name }}, \n Download ``dist.zip`` or ``dist.zip ``, and then unzip into your project folder on server.\n CHANGES: \n ${{ github.event.head_commit.message }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
