@@ -1,17 +1,16 @@
 name: Build and Release Vue App
+permissions:
+      contents: write
 
 on:
   push:
     tags:
       - 'v*' # 监听以 "v" 开头的Tag，例如 v1.0.0
-
+    
 jobs:
   
   build:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
-
     steps:
       # 1. 检出代码
       - name: Checkout code
