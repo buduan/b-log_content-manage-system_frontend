@@ -1,7 +1,7 @@
 # B-Log: Content Management System Frontend for Buduan Classmate
 🌍 **Language** : [中文](/README.md) | EN
 
-💻 The project is currently under development, and we welcome you with ideas to join us in creating it! (Email me: [buduan461@gmail.com](mailto:buduan461@gmail.com))
+💻 The project is currently under development, and we welcome you with ideas to join us in creating it! (Email me: [buduan461@gmail.com](mailto:buduan461@gmail.com))  
 📃 The frontend of Buduan Classmate's content management system  
 
 ## 📁 Directory Structure
