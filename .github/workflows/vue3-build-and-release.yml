@@ -1,0 +1,47 @@
+name: Build and Release Vue App
+
+on:
+  push:
+    tags:
+      - 'v*' # 监听以 "v" 开头的Tag，例如 v1.0.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. 设置Node.js环境
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # 根据你的项目需求选择合适的Node.js版本
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 构建Vue项目
+      - name: Build Vue app
+        run: npm run build
+
+      # 5. 将构建结果打包
+      - name: Package build artifacts
+        run: |
+          mkdir dist_package
+          cp -r dist/* dist_package/
+          tar -czvf dist_package.tar.gz dist_package/
+
+      # 6. 创建Release并上传构建结果
+      - name: Create Release and Upload Artifacts
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist_package.tar.gz
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body: "Automated release for tag ${{ github.ref_name }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
