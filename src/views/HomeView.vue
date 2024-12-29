@@ -25,11 +25,7 @@
     </div>
 
     <div
-      class="decorateCircle size-96 absolute inset-y-0 right-10 opacity-30 md:opacity-50 top-24 z-0 animate-spin-slow"
-    ></div>
-
-    <div
-      class="decorateCircle size-96 absolute inset-y-0 right-10 opacity-30 md:opacity-50 top-24 z-0 rotate-slow md:animate-spin hover:!animate-none"
+      class="decorateCircle size-96 absolute inset-y-0 right-10 opacity-40 md:opacity-50 top-24 z-0 rotate-slow md:animate-spin hover:!animate-none"
     ></div>
 
     <div class="w-full py-4 min-h-24 bg-slate-50 hidden md:block">

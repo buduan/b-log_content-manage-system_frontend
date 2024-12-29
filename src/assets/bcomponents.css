@@ -28,3 +28,21 @@
     padding-right: theme(padding.24);
   }
 }
+
+/* 定义呼吸效果的动画 */
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1); /* 正常大小 */
+    opacity: 1; /* 完全不透明 */
+  }
+  50% {
+    transform: scale(1.05); /* 放大到1.2倍 */
+    opacity: 0.7; /* 稍微透明 */
+  }
+}
+
+/* 应用动画到元素 */
+.b-animate-breath {
+  animation: breathe 3s ease-in-out infinite; /* 动画持续3秒，无限循环 */
+}
