@@ -6,7 +6,10 @@ on:
       - 'v*' # 监听以 "v" 开头的Tag，例如 v1.0.0
 
 jobs:
+  
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
