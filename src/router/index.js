@@ -57,6 +57,28 @@ const router = createRouter({
         name: 'Halo',
       },
     },
+    {
+      path: '/post/:id',
+      name: 'post',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/post/postPage.vue'),
+      meta: {
+        name: '文章',
+      },
+    },
+    {
+      path: '/post/:id/edit',
+      name: 'editPost',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/post/postEdit.vue'),
+      meta: {
+        name: '编辑文章',
+      },
+    },
   ],
 })
 

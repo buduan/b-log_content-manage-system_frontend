@@ -1,10 +1,12 @@
 <!-- postlistcard.vue -->
 <script setup>
+
 defineProps(['title', 'abstract', 'imgUrl'])
 </script>
 
 <template>
-  <li class="articleCard flex flex-row items-center gap-4 p-4 lg:mx-48">
+  <routerLink :to="'/post/' + pid">
+    <li class="articleCard flex flex-row items-center gap-4 p-4 lg:mx-48">
     <img
       class="h-24 w-36 object-fill-cover rounded-xl"
       :src="imgUrl"
@@ -12,12 +14,14 @@ defineProps(['title', 'abstract', 'imgUrl'])
       v-if="imgUrl"
     />
     <div>
-      <h2 class="lg:text-4xl text-lg mb-2 listViewTitle">{{ title }}</h2>
+      <h2 class="lg:text-4xl text-lg mb-2 listViewTitle text-slate-800">{{ title }}</h2>
       <p class="text-slate-400 text-sm listViewAbstract">
         {{ abstract }}
       </p>
     </div>
   </li>
+  </routerLink>
+
 </template>
 
 <style scoped>
