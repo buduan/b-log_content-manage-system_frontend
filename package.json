@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.30.7",
+    "@floating-ui/vue": "^1.1.5",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "axios": "^1.7.9",
