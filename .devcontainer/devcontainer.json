@@ -1,0 +1,15 @@
+{
+  "name": "Vue 3 + Vite + Tailwind CSS",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "appPort": [5173], // Vite 默认开发服务器端口
+  "postCreateCommand": "npm install",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint", // ESLint 扩展
+    "octref.vetur", // Vue 工具扩展
+    "bradlc.vscode-tailwindcss" // Tailwind CSS 智能提示扩展
+  ]
+}
