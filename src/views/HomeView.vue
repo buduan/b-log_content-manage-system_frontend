@@ -30,13 +30,81 @@
 
     <div class="w-full py-4 min-h-24 bg-slate-50 hidden md:block">
       <div class="b-container">
-        <h3 class="text-gray-400">技能树</h3>
-        <div class="mt-2 flex-col space-x-2">
-          <span class="h-12 min-w-24 p-2 bg-slate-200 text-center content-center">Vue.js</span>
-          <span class="h-12 min-w-24 p-2 bg-slate-200 text-center content-center">Express.js</span>
-          <span class="h-12 min-w-24 p-2 bg-slate-200 text-center content-center">Photoshop</span>
-          <span class="h-12 min-w-24 p-2 bg-slate-200 text-center content-center">Powerpoint</span>
-          <span class="h-12 min-w-24 p-2 bg-slate-200 text-center content-center">Illustrator</span>
+      <h3 class="text-gray-400">技能树</h3>
+      <div class="mt-4 flex flex-wrap space-x-4">
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <i class="fa-brands fa-vuejs text-green-500 text-2xl"></i>
+        <span>Vue.js</span>
+        </div>
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <i class="fa-brands fa-node-js text-green-500 text-2xl"></i>
+        <span>Express.js</span>
+        </div>
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <img src="@/assets/adobe_ps.svg" class="w-8 h-8" />
+        <span>Photoshop</span>
+        </div>
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <i class="fa-solid fa-file-powerpoint text-orange-500 text-2xl"></i>
+        <span>Powerpoint</span>
+        </div>
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <img src="@/assets/adobe_ai.svg" class="w-8 h-8" />
+        <span>Illustrator</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="b-container mx-auto my-8">
+      <span class="text-lg font-medium text-blue-500">More about me...</span>
+      <h2 class="text-3xl font-bold text-slate-800 mb-4">我的技能</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <!-- 第一个色块 - 开发 -->
+        <div class="relative p-4 bg-blue-50/50 border-2 border-blue-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-blue-500">
+          <!-- 图标 -->
+          <div class="absolute -top-6 left-4 w-20 h-20">
+            <img src="@/assets/computer.png" />
+          </div>
+          <!-- 内容 -->
+          <h2 class="text-2xl font-bold text-blue-500 mb-4 pl-24">> Developing</h2>
+          <div class="flex space-x-2 p-2">
+            <div class="flex-1 bg-blue-400 bg-opacity-20 p-2 rounded-lg text-center">
+                <i class="fa-solid fa-earth-americas text-blue-500 text-2xl"></i>
+              <p>Web开发</p>
+            </div>
+            <div class="flex-1 bg-blue-400 bg-opacity-20 p-2 rounded-lg text-center">
+              <i class="fa-brands fa-vuejs text-blue-500 text-2xl"></i>
+              <p>Vue.js前端</p>
+            </div>
+            <div class="flex-1 bg-blue-400 bg-opacity-20 p-2 rounded-lg text-center">
+                <i class="fa-solid fa-server text-blue-500 text-2xl"></i>
+              <p>后端技术</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二个色块 - 设计 -->
+        <div class="relative p-4 bg-yellow-50/50 border-2 border-yellow-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-yellow-500">
+          <!-- 图标 -->
+          <div class="absolute -top-6 left-4 w-20 h-20">
+            <img src="@/assets/pencil.png" />
+          </div>
+          <!-- 内容 -->
+          <h2 class="text-2xl font-bold text-yellow-500 mb-4 pl-24">> Design</h2>
+          <div class="flex space-x-2 p-2">
+            <div class="flex-1 bg-yellow-300 bg-opacity-20 p-2 rounded-lg text-center">
+              <i class="fa-solid fa-palette text-yellow-500 text-2xl"></i>
+              <p>平面设计</p>
+            </div>
+            <div class="flex-1 bg-yellow-300 bg-opacity-20 p-2 rounded-lg text-center">
+              <i class="fa-solid fa-paint-brush text-yellow-500 text-2xl"></i>
+              <p>UI 设计</p>
+            </div>
+            <div class="flex-1 bg-yellow-300 bg-opacity-20 p-2 rounded-lg text-center">
+              <i class="fa-solid fa-pen-fancy text-yellow-500 text-2xl"></i>
+              <p>演示设计</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
