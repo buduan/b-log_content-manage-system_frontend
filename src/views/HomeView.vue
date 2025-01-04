@@ -126,7 +126,7 @@ import projectList from '@/components/indexElements/projectList.vue'
     <div class="b-container mx-auto my-8 bg-slate-50 py-8">
       <span class="text-lg font-medium text-blue-500">Touch with me...</span>
       <h2 class="text-3xl font-bold text-slate-800 mb-4">留言板</h2>
-      <form class="grid grid-cols-1 md:grid-cols-2 gap-2 w-1/3">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-2 md:w-1/3">
         <input
           type="text"
           class="p-2 border border-gray-200 dark:border-slate-700 rounded-lg"
