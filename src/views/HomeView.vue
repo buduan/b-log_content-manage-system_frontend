@@ -4,7 +4,7 @@ import projectList from '@/components/indexElements/projectList.vue'
 
 <template>
   <main>
-    <div class="mt-16 md:min-h-96 p-16 bg-white b-container">
+    <div class="mt-16 md:min-h-96 p-16 pb-4 bg-white b-container">
       <div class="relative z-10">
         <div>
           <h1 class="md:text-[4rem] text-4xl leading-normal font-bold mb-4 text-slate-800">
@@ -30,7 +30,7 @@ import projectList from '@/components/indexElements/projectList.vue'
       class="decorateCircle size-96 absolute inset-y-0 right-10 lg:right-20 opacity-30 md:opacity-50 top-24 z-0 rotate-slow md:animate-spin hover:!animate-none"
     ></div>
 
-    <div class="w-full py-4 min-h-24 bg-slate-50 hidden md:block">
+    <div class="w-full py-4 md:min-h-24 bg-slate-50 hidden md:block">
       <div class="b-container">
       <h3 class="text-gray-400">技能树</h3>
       <div class="mt-4 flex flex-wrap space-x-4">
@@ -39,11 +39,11 @@ import projectList from '@/components/indexElements/projectList.vue'
         <span>Vue.js</span>
         </div>
         <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
-        <i class="fa-brands fa-node-js text-green-500 text-2xl"></i>
+        <i class="fa-brands fa-square-js text-yellow-300 text-2xl"></i>
         <span>Express.js</span>
         </div>
         <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
-        <img src="@/assets/adobe_ps.svg" class="w-8 h-8" />
+        <img src="@/assets/adobe_ps.svg" class="w-6 h-6" />
         <span>Photoshop</span>
         </div>
         <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
@@ -51,9 +51,14 @@ import projectList from '@/components/indexElements/projectList.vue'
         <span>Powerpoint</span>
         </div>
         <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
-        <img src="@/assets/adobe_ai.svg" class="w-8 h-8" />
+        <img src="@/assets/adobe_ai.svg" class="w-6 h-6" />
         <span>Illustrator</span>
         </div>
+        <div class="flex items-center space-x-2 p-2 px-4 rounded-lg">
+        <i class="fa-brands fa-python text-blue-600 text-2xl"></i>
+        <span>Python <span class="text-gray-400 text-sm">(learning)</span></span>
+        </div>
+        
       </div>
       </div>
     </div>
