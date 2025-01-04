@@ -79,6 +79,18 @@ const router = createRouter({
         name: '编辑文章',
       },
     },
+    // 捕获所有未匹配的路由
+    {
+      path: '/:catchAll(.*)',
+      name: 'notFound',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/notFound.vue'),
+      meta: {
+        name: '404 Not Found',
+      },
+    }
   ],
 })
 
