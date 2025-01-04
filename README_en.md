@@ -38,6 +38,24 @@ This repository is already configured with a Workflow that automatically package
 ### Step 4: Upload the Packaged Program to a Server
 Prepare a web server with Nginx, Apache, or similar software. Upload and extract the packaged files, configure the site settings, and then it will be accessible.
 
+## Content (Posts) Hierarchy
+- Tab
+    - Catalogue
+    - Tag
+        - Keyword
+
+#### Tab
+Physically separates different content hierarchies, such as blog posts, design works, etc.  
+Content from different hierarchies will not appear together under catalogue or tag searches, nor will they be recommended as related content, meaning different hierarchies do not interfere with each other.
+
+#### Catalogue and Tag
+Elements used to categorize content within each hierarchy.  
+**Catalogue**: Classifies content, with each piece of content corresponding to one category.  
+**Tag**: Labels content, with each piece of content able to correspond to multiple tags, matched based on tags.  
+
+#### Keyword
+Typically consists of 1-5 Chinese characters or 1-3 words. Each article (1000 words) will generate dozens of keywords, which can be AI-generated. It is not recommended to display these to front-end users, but they can be used for related content matching or optimizing article searches.
+ return;
 ## 😎 Developers
 - Project Initiator: [Buduan](https://github.com/buduan) (Baicen, @buduan)
 

@@ -4,7 +4,7 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
-
+// import { useFloating } from '@floating-ui/vue'
 // import EditorJS from '@editorjs/editorjs'
 
 //站点默认信息
