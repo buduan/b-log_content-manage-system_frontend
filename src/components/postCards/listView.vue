@@ -8,7 +8,7 @@ defineProps(['title', 'abstract', 'imgUrl'])
   <routerLink :to="'/post/' + pid">
     <li class="articleCard flex flex-row items-center gap-4 p-4 lg:mx-48">
     <img
-      class="h-24 w-36 object-fill-cover rounded-xl"
+      class="h-24 w-36 object-fill-cover rounded-xl bg-slate-300"
       :src="imgUrl"
       alt="article image"
       v-if="imgUrl"
