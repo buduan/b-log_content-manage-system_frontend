@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import projectList from '@/components/indexElements/projectList.vue'
+</script>
 
 <template>
   <main>
@@ -25,7 +27,7 @@
     </div>
 
     <div
-      class="decorateCircle size-96 absolute inset-y-0 right-10 opacity-40 md:opacity-50 top-24 z-0 rotate-slow md:animate-spin hover:!animate-none"
+      class="decorateCircle size-96 absolute inset-y-0 right-10 lg:right-20 opacity-30 md:opacity-50 top-24 z-0 rotate-slow md:animate-spin hover:!animate-none"
     ></div>
 
     <div class="w-full py-4 min-h-24 bg-slate-50 hidden md:block">
@@ -55,12 +57,13 @@
       </div>
       </div>
     </div>
-    <div class="b-container mx-auto my-8">
+    <div class="b-container mx-auto my-8 py-8">
       <span class="text-lg font-medium text-blue-500">More about me...</span>
       <h2 class="text-3xl font-bold text-slate-800 mb-4">我的技能</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <!-- 第一个色块 - 开发 -->
-        <div class="relative p-4 bg-blue-50/50 border-2 border-blue-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-blue-500">
+        <router-link to="/articles" class="text-slate-800 hover:text-slate-800">
+          <div class="relative p-4 bg-blue-50/50 border-2 border-blue-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-blue-500">
           <!-- 图标 -->
           <div class="absolute -top-6 left-4 w-20 h-20">
             <img src="@/assets/computer.png" />
@@ -82,9 +85,12 @@
             </div>
           </div>
         </div>
+        </router-link>
+
 
         <!-- 第二个色块 - 设计 -->
-        <div class="relative p-4 bg-yellow-50/50 border-2 border-yellow-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-yellow-500">
+        <router-link to="/designs" class="text-slate-800 hover:text-slate-800">
+          <div class="relative p-4 bg-yellow-50/50 border-2 border-yellow-100 rounded-xl transform transition-all duration-300 hover:scale-[1.03] hover:border-l-8 hover:border-yellow-500">
           <!-- 图标 -->
           <div class="absolute -top-6 left-4 w-20 h-20">
             <img src="@/assets/pencil.png" />
@@ -106,7 +112,32 @@
             </div>
           </div>
         </div>
+        </router-link>
+
       </div>
+    </div>
+
+    <div class="b-container mx-auto my-8 py-8 mt-0">
+      <h2 class="text-3xl font-bold text-slate-800 mb-1">我的项目</h2>
+      <p class="text-base text-gray-400 mb-4">使用GitHub API</p>
+      <projectList />
+    </div>
+
+    <div class="b-container mx-auto my-8 bg-slate-50 py-8">
+      <span class="text-lg font-medium text-blue-500">Touch with me...</span>
+      <h2 class="text-3xl font-bold text-slate-800 mb-4">留言板</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-2 w-1/3">
+        <input
+          type="text"
+          class="p-2 border border-gray-200 dark:border-slate-700 rounded-lg"
+          placeholder="你的名字">
+        <input
+          type="email"
+          class="p-2 border border-gray-200 dark:border-slate-700 rounded-lg"
+          placeholder="你的邮箱">
+        <textarea class="w-full p-2 border border-gray-200 dark:border-slate-700 rounded-lg col-span-2" rows="3" placeholder="你的留言"></textarea>
+        <button class="bg-slate-800 text-white p-2 rounded-lg col-span-2 w-1/6">提交</button>
+      </form>
     </div>
   </main>
 </template>
