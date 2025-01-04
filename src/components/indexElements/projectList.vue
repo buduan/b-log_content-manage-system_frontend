@@ -22,7 +22,7 @@ onMounted(async () => {
   axios
     .get('https://api.github.com/users/buduan/repos')
     .then((res) => {
-      projects.value = res.data.slice(0, 9)
+      projects.value = res.data.slice(0, 5)
     })
     .catch((err) => {
       projects.value = [
@@ -55,7 +55,11 @@ onMounted(async () => {
         :imgUrl="project.owner.avatar_url"
         :link="project.html_url"
       />
-
+      <projectCard
+        title="查看更多"
+        description="前往我的GitHub主页，查看团队项目和其他个人项目"
+        link="https://github.com/buduan"
+        />
     </div>
   </div>
 </template>
