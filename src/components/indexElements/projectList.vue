@@ -54,12 +54,13 @@ onMounted(async () => {
         :description="project.description"
         :imgUrl="project.owner.avatar_url"
         :link="project.html_url"
+        :star="project.stargazers_count"
       />
       <projectCard
         title="查看更多"
         description="前往我的GitHub主页，查看团队项目和其他个人项目"
         link="https://github.com/buduan"
-        />
+      />
     </div>
   </div>
 </template>
